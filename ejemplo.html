@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curso de Programación</title>
+    
+</head>
+<body>
+    <div class="contenido">
+        <div class="lista">
+            <h2 class="titulo"><a href="#">Introducción a la Programación</a></h2>
+            <ul class="items">
+                <li>Qué es la programación?</li>
+                <li>Lenguajes de programación y su importancia</li>
+                <li>Ambiente de desarrollo : instalación y configuración</li>
+            </ul>
+        </div>
+
+        <div class="lista">
+            <h2 class="titulo"><a href="#">Variables y Constantes</a></h2>
+            <ul class="items">
+                <li>Estructuras de control: if, else, else if</li>
+                <li>Operadores de comparación y lógicos</li>
+                <li>Bloques de código y sangría</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const titulos = document.querySelectorAll(".titulo");
+            
+            titulos.forEach((titulo) => {
+                titulo.addEventListener("click", () => {
+                    const lista = titulo.nextElementSibling;
+                    lista.classList.toggle("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

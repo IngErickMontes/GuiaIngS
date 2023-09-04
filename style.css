@@ -1,0 +1,150 @@
+.navbar-custom {
+    background-color: #007BFF; /* Color de fondo azul */
+
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .social-icons a {
+    color: white; /* Color de texto blanco */
+}
+.social-icons {
+    list-style: none;
+    
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px; /*espacio entre los íconos */
+    
+}
+.social-icons i {
+    margin: 0px;
+    font-size: 30px; /* tamaño de los iconos */
+}
+
+/* Estilos para la segunda barra de navegación */
+.navbar-secondary {
+    background-color: rgb(255, 255, 255); /* Color de fondo blanco */
+    height: 80px; /* Altura de la barra */
+    background-size: cover;
+    background-position: center;
+    
+}
+.logo {
+    max-height: 60px; /* Altura máxima del logo */
+}
+.email {
+    margin-top: 20px; /* Margen superior para el correo */
+}
+
+/* Estilos para la sección de la imagen y el título */
+.hero-section {
+    background-image: url('imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+}
+
+.hero-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contenido{
+    background-image: url("imagenes/estudiante.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 200px 0;
+    margin-top: 40px;
+
+}
+
+/* Estilos para la tercera barra de navegación */
+.navbar-options {
+    background-color: #007BFF; /* Color de fondo azul */
+    padding: 0px;
+}
+.navbar-options .nav-link {
+    color: white; /* Color de texto blanco */
+}
+
+/*estilos de los submenus*/
+.navbar-options li a {
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bffe4;
+    display: block;
+    text-decoration: none;
+}
+/*efecto del cursor en el submenu*/
+.navbar-options li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 0);
+}
+
+/*posicionamiento de los menus*/
+.navbar-options li ul{
+    display:none ;
+    position: absolute;
+}
+
+/*efecto del cursor sobre las opciones de mune (cursos y herramientas)*/
+.navbar-options li:hover > ul {
+
+    display: block; /*lo use para que el menu estuviera ordenado uno sobre otro*/
+
+}
+
+/* posicion de los sub menus de mas bajo nivel*/
+.navbar-options li ul li {
+    position: relative;
+    right: 20px;
+}
+
+/* posicion del cuadro  de los submenus al desplegarse*/
+.navbar-options li ul li ul {
+    right: -245px;
+    top: 0px;
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.navbar-options .nav-link:hover {
+    color: black;
+    background-color: rgb(255, 255, 0); 
+}
+/* quitar la enumarcion o signos */
+ul,ol{
+    list-style: none;
+}
+
+
+/*estilos de l caja donde esta contenida la mision y vision*/
+.mission-vision-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.mission-vision-section h2 {
+    margin-bottom: 20px;
+}
+
+.mission-vision-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/*pie de pagina*/
+.footer {
+    background: #007BFF;
+    padding-top: 30px;
+    color: #ffffff;
+}
+ /* Estilos para el acordeón */
+ .items {
+    display: none;
+}
+
+.active {
+    display: block;
+}
